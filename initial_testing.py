@@ -37,7 +37,7 @@ dynamicLoading_element_start_btn.click()
 # Setup explicit_wait to check when value has finished loading
 
 WebDriverWait(driver, 30).until(
-    # We use the
+    # We check for the 'finish' element to show up which confirms the load has finished
     EC.presence_of_element_located((By.ID, 'finish'))
 )
 
