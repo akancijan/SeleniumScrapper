@@ -6,7 +6,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
-
+#comment
 
 # Add option to prevent the window from automatically closing after code is executed
 chrome_options = Options()
