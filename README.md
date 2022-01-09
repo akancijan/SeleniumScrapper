@@ -1,3 +1,7 @@
+# Source
+
+<br> Examples im trying out are based on this playlist by JimShapedCoding :  <br>https://www.youtube.com/playlist?list=PLOkVupluCIjtdAJ7067yDWf_HGJR0Nom5 </br> 
+
 # Directory summary
 
 ### First Steps
