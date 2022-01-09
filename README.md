@@ -10,3 +10,5 @@
 <br>And doing some basic operations like click()</br>
 
 ### Sending Keys
+
+<br> Send wanted input into submission boxes</br>
