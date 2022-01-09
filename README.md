@@ -12,3 +12,6 @@
 ### Sending Keys
 
 <br> Send wanted input into submission boxes</br>
+
+### Modal Window
+<br> Handling pop-ups
