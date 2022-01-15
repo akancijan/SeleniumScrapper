@@ -24,5 +24,24 @@ wanted_currency = 'EUR'
 # Travel destination
 wanted_travel_destination = 'Pula'
 
+# Check in date
+# NOTE : format is yyyy-mm-dd
+wanted_check_in_date = '2022-01-26'
+wanted_check_out_date = '2022-02-07'
+
+# Number of people
+wanted_number_of_adults = 4
+
+# If you select any children, you need to fill in their ages
+# in the age_of_children list
+# example : 2 children of ages 15 and 10
+## wanted_number_of_children = 2
+## age_of_children = [15,10]
+wanted_number_of_children = 3
+age_of_children = [15, 10, 18]
+
+# Number of rooms
+wanted_number_of_rooms = 3
+
 
 

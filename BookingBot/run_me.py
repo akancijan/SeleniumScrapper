@@ -11,3 +11,13 @@ booking_obj.change_currency(currency=consts.wanted_currency)
 # Select travel destination
 booking_obj.select_travel_destination(travel_destination=consts.wanted_travel_destination)
 
+# Select wanted period for your stay
+booking_obj.select_travel_dates(
+    consts.wanted_check_in_date,
+    consts.wanted_check_out_date
+)
+
+booking_obj.select_number_of_people(
+    consts.wanted_number_of_adults,
+    consts.wanted_number_of_children,
+    consts.wanted_number_of_rooms)
