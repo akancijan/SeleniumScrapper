@@ -19,3 +19,10 @@
 
 ### Modal Window
 <br> Handling pop-ups
+
+### BookingBot
+<br> Scrapper for the site booking.com that :
+<ul>
+    <li>Selects wanted currency</li>
+    <li>Searches for places in specified travel Location</li>
+</ul>
