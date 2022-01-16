@@ -1,6 +1,7 @@
 import os
 from BookingBot.booking_package import search_vars as consts
 from BookingBot.booking_package.booking_filtration import BookingFiltration
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
@@ -185,3 +186,4 @@ class Booking(webdriver.Chrome):
 
         filtration.filter_by_star_value(consts.wanted_star_rating)
         filtration.filter_by_lowest_price_first()
+        filtration.report_selected_results()

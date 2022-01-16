@@ -1,6 +1,8 @@
 # Class with instance methods for filtartion options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
+from BookingBot.booking_package.booking_report import BookingReport
+from time import sleep
 from selenium.webdriver.common.keys import Keys
 
 
@@ -25,5 +27,17 @@ class BookingFiltration:
         sort_by_lowest_element = self.driver.find_element(
             By.CSS_SELECTOR,
             'li[data-id="price"]'
-            )
+        )
+        sleep(3)
         sort_by_lowest_element.click()
+
+    def report_selected_results(self):
+        sleep(3)
+        result_boxes = self.driver.find_element(
+            By.ID,
+            'search_results_table'
+        )
+        report = BookingReport(result_boxes)
+        report.pull_titles()
+        report.pull_price()
+        report.pull_rating()
