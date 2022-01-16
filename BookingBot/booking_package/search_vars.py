@@ -37,11 +37,15 @@ wanted_number_of_adults = 4
 # example : 2 children of ages 15 and 10
 ## wanted_number_of_children = 2
 ## age_of_children = [15,10]
-wanted_number_of_children = 3
-age_of_children = [15, 10, 18]
+wanted_number_of_children = 0
+age_of_children = []
 
 # Number of rooms
-wanted_number_of_rooms = 3
+wanted_number_of_rooms = 2
+
+# What star rating do you want selected
+# 2,3,4,5 = X star , if you want Unrated use value 0
+wanted_star_rating = [4, 5]
 
 
 

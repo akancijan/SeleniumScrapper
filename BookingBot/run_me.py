@@ -17,7 +17,12 @@ booking_obj.select_travel_dates(
     consts.wanted_check_out_date
 )
 
+# Set number of adults/children/rooms
 booking_obj.select_number_of_people(
     consts.wanted_number_of_adults,
     consts.wanted_number_of_children,
     consts.wanted_number_of_rooms)
+
+# Apply Filters
+booking_obj.apply_filter_options()
+

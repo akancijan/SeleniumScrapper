@@ -1,5 +1,6 @@
 import os
 from BookingBot.booking_package import search_vars as consts
+from BookingBot.booking_package.booking_filtration import BookingFiltration
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
@@ -66,8 +67,6 @@ class Booking(webdriver.Chrome):
         print(children_ages)
         return children_ages
 
-
-
     def select_number_of_people(self, adult_guests, children_guests, number_of_rooms):
         toggle_adults_element = self.find_element(
             By.ID,
@@ -123,6 +122,11 @@ class Booking(webdriver.Chrome):
             'button[aria-label="Increase number of Rooms"]'
         )
 
+        submit_button_element = self.find_element(
+            By.CLASS_NAME,
+            'sb-searchbox__button '
+        )
+
 
         # Grab selector for dropdown list of children ages
         '''
@@ -171,3 +175,13 @@ class Booking(webdriver.Chrome):
 
             if check_adults == True and check_children == True and check_rooms == True:
                 break
+
+
+        # After values have been set click search button
+        submit_button_element.click()
+
+    def apply_filter_options(self):
+        filtration = BookingFiltration(driver=self)
+
+        filtration.filter_by_star_value(consts.wanted_star_rating)
+        filtration.filter_by_lowest_price_first()
