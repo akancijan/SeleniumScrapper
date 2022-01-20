@@ -41,3 +41,7 @@ class BookingFiltration:
         report.pull_titles()
         report.pull_price()
         report.pull_rating()
+
+        report.print_out_gathered_data()
+
+        report.generate_report()

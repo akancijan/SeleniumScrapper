@@ -3,6 +3,9 @@ from selenium.webdriver.chrome.options import Options
 # Replace this path with your location where Chrome drivers are saved
 driver_path = r'C:\Selenium_drivers\chromedriver.exe'
 
+# Replace this with location where you want to store your reports
+report_path = r'C:\Users\aljos\PycharmProjects\SeleniumSiteScraper\BookingBot\Reports'
+
 # Landing page for our bot
 BASE_URL = 'https://www.booking.com'
 
